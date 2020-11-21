@@ -10,6 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Bam.Net\_lib\bam.net.core\bam.net.core.csproj" />
       <ProjectReference Include="..\bam.net.core\bam.net.core.csproj" />
     </ItemGroup>
 

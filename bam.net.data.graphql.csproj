@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
@@ -14,11 +14,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="bam.net.core" Version="1.0.6" />
       <PackageReference Include="GraphQL" Version="2.4.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\..\..\Bam.Net\_lib\bam.net.core\bam.net.core.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ﻿<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>bam.net.data.graphql</id>
-    <version>1.0.5-test+e3a131f</version>
+    <version>2.0.0</version>
     <authors>Bryan Apellanes</authors>
     <description>bam.net.data.graphql</description>
   </metadata>

@@ -1,9 +1,9 @@
 ﻿<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>bam.net.data.graphql</id>
+    <id>bam.data.graph</id>
     <version>2.0.0</version>
     <authors>Bryan Apellanes</authors>
-    <description>bam.net.data.graphql</description>
+    <description>bam.data.graph</description>
   </metadata>
   <files>
     <file src="_._" target="lib/net5.0" />

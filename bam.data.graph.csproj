@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Bam.Net</RootNamespace>
-    <PackageId>bam.net.data.graphql</PackageId>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Bam.Data.Graph</RootNamespace>
+    <PackageId>bam.data.graph</PackageId>
     <Version>2.0.0</Version>
     <Authors>Bryan Apellanes</Authors>
     <Company>Three Headz</Company>
@@ -17,6 +17,7 @@
     <NuspecProperties>publishDir=$([MSBuild]::NormalizeDirectory($(IntermediatePackDir)))</NuspecProperties>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <NuspecFile>bam.net.data.graphql.nuspec</NuspecFile>
+    <AssemblyName>bam.data.graph</AssemblyName>
   </PropertyGroup>
   <PropertyGroup>
     <OutputPath Condition=" '$(OS)' == 'Windows_NT' ">$(HOMEDRIVE)$(HOMEPATH)\.bam\build\$(Configuration)\$(MSBuildThisFileName)\</OutputPath>
@@ -28,7 +29,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Bam.Core\bam.core\bam.core.csproj" />
+      <ProjectReference Include="..\bam.base\bam.base\bam.base.csproj" />
+      <ProjectReference Include="..\bam.data.objects\bam.data.objects\bam.data.objects.csproj" />
+      <ProjectReference Include="..\bam.data.repositories\bam.data.repositories\bam.data.repositories.csproj" />
+      <ProjectReference Include="..\bam.data.schema\bam.data.schema\bam.data.schema.csproj" />
+      <ProjectReference Include="..\bam.data\bam.data\bam.data.csproj" />
+      <ProjectReference Include="..\bam.generators\bam.generators\bam.generators.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="GraphQLTypeGenerator.cs" />
+      <Compile Remove="GraphQueryResolver.cs" />
+      <Compile Remove="PropertyModel.cs" />
+      <Compile Remove="SemanticAssemblyInfo.cs" />
+      <Compile Remove="TypeModel.cs" />
+      <Compile Remove="SchemaModel.cs" />
     </ItemGroup>
 
 </Project>

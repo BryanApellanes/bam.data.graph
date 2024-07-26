@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Bam.Generators;
 using Bam.Net.Data.Repositories;
 using Bam.Net.Data.Schema;
 using GraphQL.Types;
